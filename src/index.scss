@@ -1,0 +1,65 @@
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --cc-primary-cyan: hsl(179, 62%, 43%);
+  --cc-primary-yellow: hsl(71, 73%, 54%);
+
+  --cc-secondary-gray: hsl(204, 43%, 93%);
+  --cc-secondary-blue: hsl(218, 22%, 67%);
+
+  --fs-base: 1rem;
+  --fs-small: 0.75rem;
+  --fs-large: 1.25rem;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --ff-base: 'Karla', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--cc-secondary-gray);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
